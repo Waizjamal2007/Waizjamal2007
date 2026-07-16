@@ -31,7 +31,7 @@
 
 I'm a full-stack web developer based in Karachi, Pakistan, focused on building production-ready SaaS platforms and client applications. I currently lead development on **NexoraWeb**, a Laravel-based SaaS platform offering a suite of AI-powered creative tools — including certificate, letter, resume, and PDF generators, a QR tool, and an AI Builder.
 
-- 🚀 Founder & Lead Developer @ **NexoraWeb** (2025 – Present)
+- 🚀 Founder & Lead Developer @ **NexoraWebai.online** (2025 – Present)
 - 🛠️ Built NexoraWeb end-to-end: architecture, UI/UX, authentication, analytics, and deployment
 - 💻 Comfortable across both the **Laravel** ecosystem and the **MERN** stack
 - 📊 Recently shipped a full user analytics and activity-tracking system, plus an admin analytics panel, for NexoraWeb
