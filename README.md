@@ -39,7 +39,7 @@ I'm a full-stack web developer based in Karachi, Pakistan, focused on building p
 - 📍 Karachi, Pakistan
 
 <p align="center">
-  <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" width="450" />
+  <img src="[https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif](https://img.magnific.com/premium-photo/female-developer-using-code-editor-with-dark-theme_167857-47255.jpg)
 </p>
 
 ---
