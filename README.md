@@ -1,109 +1,453 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&pause=1000&color=00FF41&center=true&vCenter=true&width=700&lines=⚡+Waiz+Jamal+Ashraf+⚡;💀+Founder+Of+NexoraWeb+💀;👾+Developer+%26+Security+Enthusiast+👾" alt="Typing SVG" />
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waiz Jamal Ashraf · NexoraWeb</title>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00FF41&center=true&vCenter=true&width=700&lines=💻+Full+Stack+Developer;🔓+Ethical+Hacker;🤖+AI+Web+Builder+Creator;🚀+Building+The+Future+of+Web" />
-</p>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzNlZjJkYzE5MjMwYzU3YzQ4YzU5YzQ4YzU5YzQ4YzU5YzQ4YzU5&ep=ep1&rid=matrix.gif&ct=g" width="600" height="250" />
-</p>
+    <style>
+        /* RESET & BASE – dark hacker/developer vibe */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
----
+        body {
+            background: #0b0d15;
+            background-image: radial-gradient(circle at 10% 20%, #131724 0%, #07090e 90%);
+            font-family: 'Space Grotesk', sans-serif;
+            color: #d0d9f0;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-### 🧠 About The Developer
+        /* glitchy scanline overlay (subtle) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg,
+                    rgba(0, 255, 200, 0.02) 0px,
+                    rgba(0, 255, 200, 0.02) 2px,
+                    transparent 2px,
+                    transparent 6px);
+            pointer-events: none;
+            z-index: 999;
+        }
 
-<p align="center">
-  <img align="right" alt="Hacker" width="380" src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" />
-</p>
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            position: relative;
+        }
 
-```python
-class WaizJamalAshraf:
-    def __init__(self):
-        self.role = "Founder & Lead Developer"
-        self.company = "NexoraWeb (Start-up Initiative)"
-        self.location = "Karachi, Pakistan"
-        self.mission = "Changing mindsets through technology"
-        self.mantra = "Today it is them, tomorrow it will be me"
-    
-    def hack_the_world(self):
-        return "Building SAAS ecosystems & breaking limitations"
-    
-    def mindset(self):
-        return "The problem is far more greater than you think"
-        🔥 Founder & Lead Developer at NexoraWeb (2025 – Present)
+        /* ----- TYPOGRAPHY & GLITCH ----- */
+        .glow-text {
+            text-shadow: 0 0 8px rgba(0, 255, 200, 0.3), 0 0 20px rgba(0, 255, 200, 0.1);
+        }
 
-🏗️ Built a full-stack SAAS ecosystem using Laravel, Python, and MySQL
+        .terminal-prompt {
+            font-family: 'Share Tech Mono', monospace;
+            color: #7bffd6;
+            letter-spacing: 0.5px;
+        }
 
-🤖 Engineered an AI Web Builder, Theme Marketplace & Automated Document Generators
+        .tag {
+            display: inline-block;
+            background: rgba(0, 255, 200, 0.08);
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            border-radius: 30px;
+            padding: 0.2rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8effe0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-🎨 100% product architecture, UI/UX design, and deployment handled solo
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #d0f0ff;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 1.8rem;
+            border-bottom: 1px solid rgba(0, 255, 200, 0.15);
+            padding-bottom: 0.6rem;
+        }
+        .section-title i {
+            color: #3affd0;
+            font-size: 1.6rem;
+        }
 
-🛡️ Ethical Hacker | Kali Linux Enthusiast | Network Security Explorer
+        /* ----- CARDS / BOXES (hacker style) ----- */
+        .glass-panel {
+            background: rgba(12, 18, 30, 0.7);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(0, 255, 200, 0.12);
+            border-radius: 28px;
+            padding: 2rem 1.8rem;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(0, 255, 200, 0.02);
+            transition: 0.2s ease;
+        }
 
-💀 "If I do not change the mindset, the problem is me!"
+        .glass-panel:hover {
+            border-color: rgba(0, 255, 200, 0.3);
+            box-shadow: 0 20px 50px -10px rgba(0, 255, 200, 0.05);
+        }
 
-<br clear="both" />
-💀 Founder's Quote
-<p align="center"> <img src="https://media.giphy.com/media/3o7abKhOpu0N9H4aZy/giphy.gif" width="60" /> </p><p align="center"> <b><i>"The problem is far more greater than you think, it is not poverty or lack of direction, but the lack of will. If I do not change the mindset, the problem is me!"</i></b> <br /><br /> <b>— Waiz Jamal Ashraf</b> <br /> <i>Founder Of NexoraWeb</i> </p><p align="center"> <img src="https://media.giphy.com/media/3o7abKhOpu0N9H4aZy/giphy.gif" width="60" /> </p>
-💻 Tech Arsenal
-<p align="center"> <img src="https://media.giphy.com/media/3o7abKhOpu0N9H4aZy/giphy.gif" width="200" /> </p>
-🚀 Primary Weapons
-<p align="center"> <img src="https://skillicons.dev/icons?i=laravel,python,react,js,nodejs,mysql&perline=3" /> </p>
-🎯 Full Stack Mastery
-<p align="center"> <table border="1" cellpadding="10" cellspacing="0" align="center" style="border-color: #00FF41; background: #0a0a0a;"> <tr style="background: #0f0f0f;"> <td align="center" style="color: #00FF41;"><b>🟢 HTML</b><br />70%</td> <td align="center" style="color: #00FF41;"><b>🔵 CSS</b><br />65%</td> <td align="center" style="color: #00FF41;"><b>🟡 JavaScript</b><br />85%</td> <td align="center" style="color: #00FF41;"><b>🟣 Bootstrap</b><br />65%</td> </tr> <tr style="background: #0a0a0a;"> <td align="center" style="color: #00FF41;"><b>⚡ Laravel</b><br />88%</td> <td align="center" style="color: #00FF41;"><b>📊 Excel</b><br />75%</td> <td align="center" style="color: #00FF41;"><b>🐬 MySQL</b><br />50%</td> <td align="center" style="color: #00FF41;"><b>🐘 PHP</b><br />60%</td> </tr> <tr style="background: #0f0f0f;"> <td align="center" style="color: #00FF41;"><b>🔷 ASP.NET Core</b><br />55%</td> <td align="center" style="color: #00FF41;"><b>📦 Entity Framework</b><br />72%</td> <td align="center" style="color: #00FF41;"><b>🔗 API Integration</b><br />90%</td> <td align="center" style="color: #00FF41;"><b>🌐 cPanel Deployment</b><br />58%</td> </tr> <tr style="background: #0a0a0a;"> <td align="center" style="color: #00FF41;"><b>🅰️ Angular</b><br />60%</td> <td align="center" style="color: #00FF41;"><b>📘 TypeScript</b><br />62%</td> <td align="center" style="color: #00FF41;"><b>🔧 C#</b><br />55%</td> <td align="center" style="color: #00FF41;"><b>🐍 Python</b><br />75%</td> </tr> <tr style="background: #0f0f0f;"> <td align="center" style="color: #00FF41;"><b>⚛️ React</b><br />85%</td> <td align="center" style="color: #00FF41;"><b>🍃 MongoDB</b><br />50%</td> <td align="center" style="color: #00FF41;"><b>🟩 Node.js</b><br />65%</td> <td align="center" style="color: #00FF41;"><b>⬆️ C++</b><br />65%</td> </tr> </table> </p>
-🛡️ Security & Hacking Toolkit
-<p align="center"> <img src="https://media.giphy.com/media/3o7abKhOpu0N9H4aZy/giphy.gif" width="200" /> </p><p align="center"> <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" /> <img src="https://img.shields.io/badge/Nmap-004B87?style=for-the-badge&logo=nmap&logoColor=white" /> <img src="https://img.shields.io/badge/Tor_Browser-7D4698?style=for-the-badge&logo=torproject&logoColor=white" /> <img src="https://img.shields.io/badge/MITM-FF6B6B?style=for-the-badge&logo=hackthebox&logoColor=white" /> </p><p align="center"> <table border="1" cellpadding="10" cellspacing="0" align="center" style="border-color: #00FF41; background: #0a0a0a; width: 70%;"> <tr style="background: #0f0f0f;"> <td align="center" style="color: #00FF41;"><b>🔍 Nmap</b><br />(Network Scanning)</td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> <tr style="background: #0a0a0a;"> <td align="center" style="color: #00FF41;"><b>🕵️ Network Spoofing</b></td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> <tr style="background: #0f0f0f;"> <td align="center" style="color: #00FF41;"><b>💥 DDoS Attack Analysis</b></td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> <tr style="background: #0a0a0a;"> <td align="center" style="color: #00FF41;"><b>📍 IP Founding/Tracing</b></td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> <tr style="background: #0f0f0f;"> <td align="center" style="color: #00FF41;"><b>🎣 Zphisher</b></td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> <tr style="background: #0a0a0a;"> <td align="center" style="color: #00FF41;"><b>🌐 Tor Browser</b><br />(Anonymity)</td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> <tr style="background: #0f0f0f;"> <td align="center" style="color: #00FF41;"><b>🔀 MITM Attacks</b></td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> <tr style="background: #0a0a0a;"> <td align="center" style="color: #00FF41;"><b>📱 APK Bug File Analysis</b></td> <td align="center" style="color: #00FF41;">🟩🟩🟩🟩🟩 65%</td> </tr> </table> </p>
-🎯 Current Mission
-<p align="center"> <img src="https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif" width="300" /> </p>
-text
-┌─────────────────────────────────────────────────────────────┐
-│  ██████╗ ███████╗██╗   ██╗███████╗██╗      █████╗ ██████╗  │
-│  ██╔══██╗██╔════╝██║   ██║╚══███╔╝██║     ██╔══██╗██╔══██╗ │
-│  ██████╔╝█████╗  ██║   ██║  ███╔╝ ██║     ███████║██████╔╝ │
-│  ██╔══██╗██╔══╝  ╚██╗ ██╔╝ ███╔╝  ██║     ██╔══██║██╔══██╗ │
-│  ██║  ██║███████╗ ╚████╔╝ ███████╗███████╗██║  ██║██║  ██║ │
-│  ╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ │
-│              DEVELOP · DEPLOY · DOMINATE                    │
-└─────────────────────────────────────────────────────────────┘
-🔭 Building NexoraWeb - AI-powered web solutions
+        /* ----- HEADER (hacker + dev) ----- */
+        .header-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
 
-🤖 Developing AI Web Builder with Laravel & Python
+        .brand h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #9afff0, #3affd0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
 
-🛡️ Exploring Cybersecurity & Ethical Hacking
+        .brand .sub {
+            font-family: 'Share Tech Mono', monospace;
+            color: #7aa9b0;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .brand .sub i {
+            color: #3affd0;
+        }
 
-🌐 Creating Theme Marketplace platform
+        .badge-group {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .badge-group .badge {
+            background: #131d2a;
+            border: 1px solid #2b4a55;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #b5e6e0;
+            letter-spacing: 0.3px;
+        }
+        .badge-group .badge i {
+            margin-right: 6px;
+            color: #3affd0;
+        }
 
-📄 Automating Document Generation systems
+        /* QUOTE (prominent) */
+        .quote-block {
+            background: rgba(0, 255, 200, 0.02);
+            border-left: 4px solid #3affd0;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0 2.5rem 0;
+            border-radius: 0 20px 20px 0;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #b4e6e0;
+            box-shadow: 0 0 30px rgba(0, 255, 200, 0.02);
+        }
+        .quote-block i {
+            color: #3affd0;
+            margin-right: 10px;
+        }
+        .quote-author {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #74b8b0;
+            letter-spacing: 1px;
+        }
 
-💀 Changing mindsets one line of code at a time
+        /* SKILLS (bars + tags) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            gap: 1rem 1.2rem;
+            margin-top: 0.5rem;
+        }
 
-📊 GitHub Analytics
-<p align="center"> <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Waizjamal2007&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0a0a0a&icon_color=00FF41&title_color=00FF41" /> <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Waizjamal2007&theme=chartreuse-dark&hide_border=true&background=0a0a0a&ring=00FF41&fire=00FF41&currStreakLabel=00FF41" /> </p><p align="center"> <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Waizjamal2007&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0a0a0a&title_color=00FF41" /> </p><p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=Waizjamal2007&theme=chartreuse-dark&hide_border=true&bg_color=0a0a0a&color=00FF41&line=00FF41&point=00FF41" width="90%" /> </p>
-🏆 Battle Trophies
-<p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=Waizjamal2007&theme=matrix&no-frame=true&row=2&column=4&bg_color=0a0a0a" /> </p>
-💀 The Matrix Code
-<p align="center"> <img src="https://media.giphy.com/media/xTiTnHL8V9tKoeYvaU/giphy.gif" width="400" /> </p>
-javascript
-while (alive) {
-    code();
-    hack();
-    innovate();
-    change_mindsets();
-    repeat();
-}
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+        .skill-item .skill-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #b0d0d0;
+        }
+        .skill-item .skill-label span:last-child {
+            color: #7bffd6;
+            font-family: 'Share Tech Mono', monospace;
+        }
 
-// Today it is them, tomorrow it will be me
-🔥 My Manifesto
-<p align="center"> <img src="https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif" width="200" /> </p>
-"Today it is them, tomorrow it will be me."
+        .progress-bar-bg {
+            width: 100%;
+            height: 6px;
+            background: #1a2636;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2cd4b0, #3affd0);
+            width: 0%;
+            box-shadow: 0 0 12px #3affd050;
+        }
 
-<p align="center"> <b>— Waiz Jamal Ashraf</b> <br /> <i>Founder Of NexoraWeb</i> </p>
-👾 Profile Views
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Waizjamal2007&label=🔴%20HACKER%20VIEWS&color=00FF41&style=for-the-badge" /> <img src="https://img.shields.io/github/followers/Waizjamal2007?style=for-the-badge&color=00FF41&label=👥%20FOLLOWERS" /> <img src="https://img.shields.io/github/stars/Waizjamal2007?style=for-the-badge&color=00FF41&label=⭐%20STARS" /> </p>
-🌐 Connect With The Founder
-<p align="center"> <a href="https://waizjamalportfolio.netlify.app/"> <img src="https://img.shields.io/badge/🌐_Portfolio-00FF41?style=for-the-badge&logo=netlify&logoColor=black" /> </a> <a href="https://www.linkedin.com/in/waiz-jamal-asharf-4b20a833a"> <img src="https://img.shields.io/badge/💼_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> <a href="https://www.instagram.com/exotic_waiz_jamal/"> <img src="https://img.shields.io/badge/📸_Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /> </a> <a href="mailto:waizjamal7@gmail.com"> <img src="https://img.shields.io/badge/✉️_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> </a> <a href="https://github.com/Waizjamal2007"> <img src="https://img.shields.io/badge/🐙_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /> </a> </p>
-⚡ Last Words
-<p align="center"> <img src="https://media.giphy.com/media/3o7abKhOpu0N9H4aZy/giphy.gif" width="100" /> </p><p align="center"> <b>💀 "Code is my weapon, innovation is my shield" 💀</b> </p><p align="center"> <i>Waiz Jamal Ashraf | Founder Of NexoraWeb</i> </p>
-<p align="center"> <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="80" /> </p><p align="center"> <b>💀 HACK THE SYSTEM. BUILD THE FUTURE. CHANGE THE MINDSET. 💀</b> </p> ```
+        /* special tag for "hacker" tools */
+        .hacker-tag {
+            display: inline-block;
+            background: rgba(255, 70, 130, 0.08);
+            border: 1px solid rgba(255, 70, 130, 0.25);
+            border-radius: 40px;
+            padding: 0.1rem 0.9rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #ff8aa0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin: 0.2rem 0.2rem 0 0;
+        }
+
+        /* extra hacker/dev quote row */
+        .hacker-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem 2.5rem;
+            margin: 2rem 0 1rem;
+            font-family: 'Share Tech Mono', monospace;
+            border-top: 1px dashed rgba(0, 255, 200, 0.1);
+            padding-top: 1.8rem;
+        }
+        .hacker-row i {
+            color: #3affd0;
+            width: 1.6rem;
+        }
+
+        .footer-note {
+            margin-top: 3rem;
+            text-align: right;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.85rem;
+            color: #3e6868;
+            border-top: 1px solid rgba(0, 255, 200, 0.05);
+            padding-top: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .footer-note strong {
+            color: #7bffd6;
+            font-weight: 500;
+        }
+
+        /* responsiveness */
+        @media (max-width: 700px) {
+            .brand h1 {
+                font-size: 2.2rem;
+            }
+            .header-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.2rem;
+            }
+            .quote-block {
+                font-size: 0.95rem;
+                padding: 1.2rem;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 450px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .glass-panel {
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        /* blinking cursor effect (extra) */
+        .cursor-blink {
+            display: inline-block;
+            width: 10px;
+            height: 2px;
+            background: #3affd0;
+            animation: blink 1s step-end infinite;
+            margin-left: 8px;
+        }
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER with hacker/dev style -->
+        <div class="header-wrap">
+            <div class="brand">
+                <h1>
+                    <span class="glow-text">⧩ Waiz Jamal Ashraf</span>
+                    <span style="font-size: 1.8rem; color: #3affd0;">|</span>
+                    <span style="font-size: 1.6rem; background: linear-gradient(145deg, #b0f0e8, #3affd0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">NexoraWeb</span>
+                </h1>
+                <div class="sub">
+                    <i class="fas fa-terminal"></i> founder · lead architect
+                    <span style="color: #4f7a7a;">|</span>
+                    <i class="fas fa-skull"></i> hacker mindset
+                    <span style="color: #4f7a7a;">|</span>
+                    <i class="fas fa-code"></i> full-stack dev
+                    <span class="cursor-blink"></span>
+                </div>
+            </div>
+            <div class="badge-group">
+                <span class="badge"><i class="fas fa-shield-alt"></i> Kali · nmap · mitm</span>
+                <span class="badge"><i class="fas fa-brain"></i> AI Web Builder</span>
+                <span class="badge"><i class="fas fa-cubes"></i> SAAS ecosystem</span>
+            </div>
+        </div>
+
+        <!-- QUOTE (favorite) -->
+        <div class="quote-block">
+            <i class="fas fa-quote-left"></i>
+            <span>
+                the problem is far more greater than you think, it is not poverty or lack of direction, but the lack of will.
+                if i do not change the mindset, the problem is me!
+            </span>
+            <div class="quote-author">
+                <i class="fas fa-code-branch"></i> Waiz Jamal Ashraf · NexoraWeb
+            </div>
+        </div>
+
+        <!-- about + hacker/dev one-liner -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span class="tag"><i class="fas fa-bolt"></i> full-stack</span>
+                <span class="tag"><i class="fas fa-robot"></i> AI / automation</span>
+                <span class="tag"><i class="fas fa-user-secret"></i> pentest · spoof</span>
+                <span class="tag"><i class="fas fa-cloud"></i> deployment · cPanel</span>
+            </div>
+            <div style="font-family: 'Share Tech Mono', monospace; color: #5b9490; font-size: 0.8rem;">
+                <i class="fas fa-arrow-right" style="color: #3affd0;"></i> today it is them, tomorrow it will be me.
+            </div>
+        </div>
+
+        <!-- SKILLS (with progress bars & hacker tags) -->
+        <div class="glass-panel" style="margin-bottom: 2.5rem;">
+            <div class="section-title">
+                <i class="fas fa-microchip"></i>  skills · arsenal
+                <span style="margin-left: auto; font-size: 0.7rem; background: #131d2a; padding: 0.2rem 1.2rem; border-radius: 40px; border: 1px solid #1f3e44; font-weight: 400;">
+                    <i class="fas fa-terminal"></i> dev + hack
+                </span>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Hardcoded skills with values (matching the list) -->
+                <div class="skill-item"><div class="skill-label"><span>HTML</span><span>70%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:70%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>CSS</span><span>65%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:65%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>JavaScript</span><span>85%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:85%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>Bootstrap</span><span>65%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:65%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>Laravel</span><span>88%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:88%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>Excel</span><span>75%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:75%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>MySQL</span><span>50%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:50%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>PHP</span><span>60%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:60%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>ASP.NET Core</span><span>55%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:55%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>Entity Framework</span><span>72%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:72%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>API Integration</span><span>90%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:90%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>cPanel / Live</span><span>58%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:58%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>Angular</span><span>60%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:60%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>TypeScript</span><span>62%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:62%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>C#</span><span>55%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:55%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>Python</span><span>75%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:75%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>React</span><span>85%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:85%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>MongoDB (Atlas)</span><span>50%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:50%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>Node.js</span><span>65%</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:65%"></div></div></div>
+                <div class="skill-item"><div class="skill-label"><span>C++</span><span>—</span></div><div class="progress-bar-bg"><div class="progress-fill" style="width:40%"></div></div></div>
+            </div>
+
+            <!-- hacker/kali extra row (displayed as tags) -->
+            <div style="margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; border-top: 1px solid rgba(0,255,200,0.05); padding-top: 1.5rem;">
+                <span class="hacker-tag"><i class="fas fa-skull"></i> Kali Linux</span>
+                <span class="hacker-tag"><i class="fas fa-network-wired"></i> nmap</span>
+                <span class="hacker-tag"><i class="fas fa-user-secret"></i> network spoofing</span>
+                <span class="hacker-tag"><i class="fas fa-bolt"></i> DDoS (simulation)</span>
+                <span class="hacker-tag"><i class="fas fa-map-pin"></i> IP founding</span>
+                <span class="hacker-tag"><i class="fas fa-fish"></i> zphisher</span>
+                <span class="hacker-tag"><i class="fas fa-globe"></i> Tor browser</span>
+                <span class="hacker-tag"><i class="fas fa-exchange-alt"></i> mitm</span>
+                <span class="hacker-tag"><i class="fas fa-bug"></i> APK bug file</span>
+            </div>
+        </div>
+
+        <!-- extra hacker/dev row: founder + mindset -->
+        <div class="hacker-row">
+            <span><i class="fas fa-flag"></i> founder · NexoraWeb (start-up 2025)</span>
+            <span><i class="fas fa-cogs"></i> SAAS ecosystem · AI web builder · theme marketplace</span>
+            <span><i class="fas fa-code"></i> 100% architecture · UI/UX · deployment</span>
+            <span style="color: #3affd0;"><i class="fas fa-quote-right"></i> “the lack of will is the only failure”</span>
+        </div>
+
+        <!-- extra line: today / tomorrow (the quote from description) -->
+        <div style="font-family: 'Share Tech Mono', monospace; text-align: center; margin: 1.8rem 0 0.8rem; color: #5f9390; font-size: 0.95rem; border: 1px dashed rgba(0,255,200,0.1); padding: 0.8rem; border-radius: 60px; background: rgba(0,255,200,0.02);">
+            <i class="fas fa-forward" style="color: #3affd0; margin-right: 12px;"></i>
+            today it is them, tomorrow it will be me.
+            <i class="fas fa-backward" style="color: #3affd0; margin-left: 12px;"></i>
+        </div>
+
+        <!-- footer (no "made with love" – just founder signature) -->
+        <div class="footer-note">
+            <i class="fas fa-terminal" style="color: #3affd0; margin-right: 8px;"></i>
+            Waiz Jamal Ashraf  <span style="color: #3e6868;">|</span>  Founder Of NexoraWeb
+            <span style="display: inline-block; margin-left: 1.5rem; color: #3e6868; font-size: 0.7rem;">
+                <i class="fas fa-shield-halved"></i>  hacker · developer · builder
+            </span>
+        </div>
+
+    </div>
+    <!-- end container -->
+
+</body>
+</html>
